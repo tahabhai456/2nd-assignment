@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Registration Form</title>
+</head>
+<body>
+    <a href="./INDEX.HTML">
+         <header>
+        <img src="./circled-left-2--v1.jpg" alt="NOT FOUND" width="50px">
+    </header>
+    </a>
+   
+    
+    <center>
+
+    <head>
+       <img src="./logo.png" alt="NOT FOUND" width="250px">
+    </head>
+
+    <h2>Student Registration Form</h2>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+      <table>
+        <!-- first Name -->
+        <tr>
+          <td class="label">FIRST NAME</td>
+          <td>
+              <input type="text" name="firstName" maxlength="30" placeholder="Enter the First Name" required />
+              <span class="hint">(max 30 characters a-z and A-Z)</span>
+          </td>
+        </tr>
+        <br>
+
+        <!-- last Name -->
+        <tr>
+          <td class="label">LAST NAME</td>
+          <td>
+              <input type="text" name="lastName" maxlength="30" placeholder="Enter the Last Name" required />
+              <span class="hint">(max 30 characters a-z and A-Z)</span>
+          </td>
+        </tr>
+        <br>
+
+        <!-- date of Birth -->
+        <tr>
+          <td class="label">DATE OF BIRTH</td>
+          <td>
+            <input type="date" name="dob" required />
+          </td>
+        </tr>
+        <br>
+
+        <!-- email -->
+        <tr>
+          <td class="label">EMAIL ID</td>
+          <td>
+            <input type="email" name ="email" placeholder="Enter the Email Address" required />
+          </td>
+        </tr>
+        <br>
+
+        <!-- mobile Number -->
+        <tr>
+          <td class="label">MOBILE NUMBER</td>
+           <td>
+              <input type="tel" name="mobile" pattern="[0-9]{10}" placeholder="Enter the Mobile Number" required />
+              <span class="hint">(10 Digits Numbers)</span>
+          </td>
+        </tr>
+        <br>
+
+        <!-- gender -->
+        <tr>
+          <td class="label">GENDER</td>
+          <td>
+              <label><input type="radio" name="gender" value="Male" required /> Male</label>
+              <label><input type="radio" name="gender" value="Female" /> Female</label>
+          </td>
+        </tr>
+        <br>
+
+        <!-- address -->
+        <tr>
+          <td class="label">ADDRESS</td>
+          <td>
+            <textarea name="address" rows="3" required></textarea>
+          </td>
+        </tr>
+
+        <!-- city -->
+        <tr>
+          <td class="label">CITY</td>
+          <td>
+              <input type="text" name="city" maxlength="30" placeholder="Enter the City Name" required />
+              <span class="hint">(max 30 characters a-z and A-Z)</span>
+          </td>
+        </tr>
+
+        <!-- pin Code -->
+        <tr>
+          <td class="label">PIN CODE</td>
+          <td>
+              <input type="text" name="pincode" pattern="[0-9]{6}" placeholder="Enter the Pin Code" required />
+              <span class="hint">(6 Digits Numbers)</span>
+          </td>
+        </tr>
+
+        <!-- state -->
+        <tr>
+          <td class="label">STATE</td>
+          <td>
+              <input type="text" name="state" maxlength="30" placeholder="Enter the State" required />
+              <span class="hint">(max 30 characters a-z and A-Z)</span>
+          </td>
+        </tr>
+        <br>
+
+        <!-- country -->
+        <tr>
+          <td class="label">COUNTRY</td>
+          <td>
+            <input type="text" name="country" placeholder="Enter the Country Name" required />
+          </td>
+        </tr>
+        <br>
+
+        <!-- Hobbies -->
+        <tr>
+          <td class="label">HOBBIES</td>
+          <td>
+              <label><input type="checkbox" name="hobbies" value="Drawing" /> Drawing</label>
+              <label><input type="checkbox" name="hobbies" value="Singing" /> Singing</label>
+              <label><input type="checkbox" name="hobbies" value="Dancing" /> Dancing</label>
+              <label><input type="checkbox" name="hobbies" value="Sketching" /> Sketching</label>
+              <label>Others <input type="text" name="other_hobby" style="width: 150px; display: inline-block;" /></label>
+          </td>
+        </tr>
+        <br>
+
+        <!-- Qualification -->
+        <tr>
+          <td class="label" style="vertical-align: top; padding-top: 15px;">QUALIFICATION</td>
+          <td>
+            <table class="qual-table">
+              <thead>
+                <tr>
+                  <th>Sl.No.</th>
+                  <th>Examination</th>
+                  <th>Board</th>
+                  <th>Percentage</th>
+                  <th>Year of passing</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Class X</td>
+                  <td><input type="text" name="class10_board" maxlength="10" /></td>
+                  <td><input type="number" step="0.01" name="class10_pct" min="0" max="100" /></td>
+                  <td><input type="text" name="class10_year" maxlength="4" /></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Class XII</td>
+                  <td><input type="text" name="class12_board" maxlength="10" /></td>
+                  <td><input type="number" step="0.01" name="class12_pct" min="0" max="100" /></td>
+                  <td><input type="text" name="class12_year" maxlength="4" /></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Graduation</td>
+                  <td><input type="text" name="grad_board" maxlength="10" /></td>
+                  <td><input type="number" step="0.01" name="grad_pct" min="0" max="100" /></td>
+                  <td><input type="text" name="grad_year" maxlength="4" /></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Masters</td>
+                  <td><input type="text" name="masters_board" maxlength="10" /></td>
+                  <td><input type="number" step="0.01" name="masters_pct" min="0" max="100" /></td>
+                  <td><input type="text" name="masters_year" maxlength="4" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <br>
+
+        <!-- courses Applied For -->
+        <tr>
+          <td class="label">COURSES APPLIED FOR</td>
+          <td>
+              <label><input type="radio" name="course" value="BCA" /> BCA</label>
+              <label><input type="radio" name="course" value="B.A" /> B.A</label>
+              <label><input type="radio" name="course" value="B.Sc" /> B.Sc</label>
+              <label><input type="radio" name="course" value="B.Com" /> B.Com</label>
+          </td>
+        </tr>
+        <br>
+
+        <!-- photo Upload -->
+        <tr>
+          <td class="label">UPLOAD PIC</td>
+          <td>
+            <input type="file" name="photo" accept=".png, .jpg, .jpeg" />
+          </td>
+        </tr>
+        <br>
+
+      
+        <!-- Courses Applied For -->
+        <tr>
+          <td class="label">COURSES APPLIED FOR</td>
+          <td>
+              <label><input type="radio" name="course" value="BCA" /> BCA</label>
+              <label><input type="radio" name="course" value="B.A" /> B.A</label>
+              <label><input type="radio" name="course" value="B.Sc" /> B.Sc</label>
+              <label><input type="radio" name="course" value="B.Com" /> B.Com</label>
+          </td>
+        </tr>
+        <br>
+
+        <!-- Photo Upload -->
+        <tr>
+          <td class="label">UPLOAD PIC</td>
+          <td>
+            <input type="file" name="photo" accept=".png, .jpg, .jpeg" />
+          </td>
+        </tr>
+
+      </table>
+
+      <!-- Buttons -->
+        <button type="submit" class="btn btn-submit">Submit</button>
+        <button type="reset" class="btn btn-reset">Reset</button>
+    <br>
+    </form>
+
+
+</body>
+</html>
+
+        </center>
